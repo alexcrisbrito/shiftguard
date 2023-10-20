@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,30 +16,23 @@ namespace ShiftGuard
         public MainScreen()
         {
             InitializeComponent();
-            RunClock();
+            getServerDateTime();
+        
         }
 
-        public void RunClock()
+        public void getServerDateTime()
         {
             Timer timer = new Timer();
-            timer.Interval = 1000;
+            timer.Interval = 500;
             timer.Tick += (s, e) =>
             {
-                clock_lbl.Text = DateTime.Now.ToString("dddd dd MMMM yyyy");
-                clock_lbl.Refresh();
+                ServerTimeLbl.Text = DateTime.Now.ToString("HH:mm:ss");
+                ServerDateLbl.Refresh();
             };
 
             timer.Start();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+      
+            ServerDateLbl.Text = DateTime.Now.ToString("dddd dd MMMM yyyy");
         }
 
         private void ShiftSwitchButton_Click(object sender, EventArgs e)
@@ -51,7 +45,12 @@ namespace ShiftGuard
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void timerPanel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimeSheetBtn_Click(object sender, EventArgs e)
         {
 
         }

@@ -124,10 +124,13 @@
   <data name="timer_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Images\timer_new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="start_timer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\start_timer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="timesheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Images\timesheet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="start_timer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Images\start_timer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Images\clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
